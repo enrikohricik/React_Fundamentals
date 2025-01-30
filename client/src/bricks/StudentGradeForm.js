@@ -71,7 +71,7 @@ export default function StudentGradeForm({
 
     setStudentAddGradeCall({ state: "pending" })
     const res = await fetch(
-      `${process.env.REACT_APP_API_URL}/grade/${grade ? "update" : "create"}`,
+      `http://localhost:3000/grade/${grade ? "update" : "create"}`,
       {
         method: "POST",
         headers: {
